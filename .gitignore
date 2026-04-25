@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# IDEs
+.vscode/
+.idea/
+
+# C++ binaries
+*.exe
+*.o
+*.obj
+out/
+build/
