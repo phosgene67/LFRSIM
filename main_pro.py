@@ -436,7 +436,7 @@ class Robot:
         self.brain = PIDController(Config.KP, Config.KI, Config.KD)
         self.reset()
         try:
-            self.img = pygame.image.load(os.path.join(os.path.dirname(__file__), "assets", "robot.png")).convert_alpha()
+            self.img = pygame.image.load(os.path.join(os.path.dirname(__file__), "assets", "robot.png")).convert_alpha()   #try => do this --- except => if try fails , then do this ;
             self.img = pygame.transform.scale(self.img, (50, 45))
         except: 
             self.img = None
